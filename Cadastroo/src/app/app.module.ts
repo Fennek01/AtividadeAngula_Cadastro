@@ -8,6 +8,9 @@ import { DataBindingModule } from './pages/data-binding/data-binding.module';
 import { MostrarModule } from './pages/Mostrar/Mostrar.module';
 import { FormsModule } from '@angular/forms';
 import { DivisorModule } from './pages/data-binding/divisor/divisor.module';
+import { TestesModule } from './pages/Testes/Testes.module';
+import { BotaoComponent } from './pages/botao/botao.component';
+import { InputComponent } from './pages/input/input.component';
 
 @NgModule({
   imports: [
@@ -17,10 +20,13 @@ import { DivisorModule } from './pages/data-binding/divisor/divisor.module';
     DataBindingModule,
     AppRountingModule,
     DivisorModule,
+    TestesModule,
     MostrarModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    BotaoComponent,
+    InputComponent
   ],
   exports: [],
   providers: [],
